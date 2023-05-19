@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './common/header/Header';
-import { BrowserRouter as Router, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Pages from './pages/Pages';
 
 function App() {
   return (
@@ -8,7 +9,10 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        {/* <Route exact path='/' element={<About />} /> */}
+        <Route exact path='/' element={<Pages />} />
+        {/* <Route path='/' exact>
+          <Pages />
+        </Route> */}
       </Routes>
     </Router>
    </>
